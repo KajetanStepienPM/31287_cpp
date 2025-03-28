@@ -8,8 +8,11 @@ using namespace std;
 
 class Graph{
     private:
-        unordered_map<string, vector<pair<string, int>>> graphData;
+        unordered_map<string, vector<pair<string, int> > > graphData;
     public:
-        void addGraphEdge(string u, string v, int distance);
-        void printGraph();
+        void addGraphEdge(const string& city1, const string& city2, int distance); //wskazniki, poniewaz uzywam nazw miast zamiast np. ich ID
+        void printGraph(); //funkcja, ktora docelowo bedzie drukowala cala liste sasiedztwa dla miasta
+        vector<pair<string, int> > getNeighbours(const string& city){
+            return graphData[city];
+        }
 };
