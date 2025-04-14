@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Graph::Djikstra(const string& start){
+void Graph::Dijkstra(const string& start){
     unordered_map<string, int> distances;
     unordered_map<string, bool> visited;
 
