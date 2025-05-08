@@ -6,9 +6,18 @@
 
 using namespace std;
 
+#include <cstdlib> // do rand()
+
 void Graph::addGraphEdge(const string& city1, const string& city2, int distance) {
     graphData[city1].push_back(make_pair(city2, distance));
     graphData[city2].push_back(make_pair(city1, distance));
+
+    if (cityPositions.find(city1) == cityPositions.end()) {
+        cityPositions[city1] = sf::Vector2f(rand() % 700 + 50, rand() % 500 + 50);
+    }
+    if (cityPositions.find(city2) == cityPositions.end()) {
+        cityPositions[city2] = sf::Vector2f(rand() % 700 + 50, rand() % 500 + 50);
+    }
 }
 
 void Graph::printGraph() {
@@ -80,4 +89,25 @@ void Graph::printShortestPaths(const unordered_map<string, int>& distances, cons
             cout << "Do " << city << ": " << distance << " km" << endl;
         }
     }
+}
+
+vector<string> Graph::getAllCities() const {
+    vector<string> cities;
+    for (const auto& [city, _] : graphData) {
+        cities.push_back(city);
+    }
+    return cities;
+}
+
+void Graph::setCityPosition(const string& city, const sf::Vector2f& position) {
+    cityPositions[city] = position;
+}
+
+sf::Vector2f Graph::getCityPosition(const string& city) const {
+    auto it = cityPositions.find(city);
+    if (it != cityPositions.end()) {
+        return it->second;
+    }
+    // Jeśli nie znaleziono — zwróć losową pozycję (dla bezpieczeństwa)
+    return sf::Vector2f(100, 100);
 }

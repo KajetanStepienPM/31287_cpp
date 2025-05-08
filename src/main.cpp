@@ -1,5 +1,6 @@
 #include "Graph.h"
 #include <iostream>
+#include "GraphVisualizer.h"
 
 using namespace std;
 
@@ -51,6 +52,10 @@ int main() {
 
     unordered_map<string, int> distances = g.Dijkstra(startCity);
     g.printShortestPaths(distances, startCity);
+
+
+    GraphVisualizer visualizer;
+visualizer.visualize(g);
 
     return 0;
 }

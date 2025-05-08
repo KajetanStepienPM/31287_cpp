@@ -1,0 +1,56 @@
+Szczecin, Dworzec Glowny;Szczecin, Plac Grunwaldzki;2
+Szczecin, Dworzec Glowny;Szczecin, Zamek Ksiazat Pomorskich;3
+Szczecin, Plac Grunwaldzki;Szczecin, Aleja Wojska Polskiego;1
+Szczecin, Aleja Wojska Polskiego;Szczecin, Urzad Miasta;1
+Szczecin, Urzad Miasta;Szczecin, Waly Chrobrego;2
+Szczecin, Waly Chrobrego;Szczecin, Muzeum Morskie;1
+Szczecin, Muzeum Morskie;Szczecin, Filharmonia;1
+Szczecin, Filharmonia;Szczecin, Katedra sw. Jakuba;2
+Szczecin, Katedra sw. Jakuba;Szczecin, Brama Portowa;1
+Szczecin, Brama Portowa;Szczecin, Plac Zwyciestwa;1
+Szczecin, Plac Zwyciestwa;Szczecin, Cmentarz Centralny;4
+Szczecin, Cmentarz Centralny;Szczecin, Park Kasprowicza;2
+Szczecin, Park Kasprowicza;Szczecin, Jezioro Glebokie;3
+Warszawa, Dworzec Centralny;Warszawa, Palac Kultury;1
+Warszawa, Palac Kultury;Warszawa, Zlote Tarasy;1
+Warszawa, Zlote Tarasy;Warszawa, Stare Miasto;2
+Warszawa, Stare Miasto;Warszawa, Rynek Starego Miasta;1
+Warszawa, Rynek Starego Miasta;Warszawa, Barbakan;1
+Warszawa, Barbakan;Warszawa, Nowe Miasto;1
+Warszawa, Nowe Miasto;Warszawa, Metro Ratusz;2
+Warszawa, Metro Ratusz;Warszawa, Centrum Nauki Kopernik;3
+Warszawa, Centrum Nauki Kopernik;Warszawa, Biblioteka Uniwersytecka;2
+Warszawa, Biblioteka Uniwersytecka;Warszawa, Stadion Narodowy;3
+Gdansk, Dworzec Glowny;Gdansk, Stare Miasto;2
+Gdansk, Stare Miasto;Gdansk, Dlugi Targ;1
+Gdansk, Dlugi Targ;Gdansk, Fontanna Neptuna;1
+Gdansk, Fontanna Neptuna;Gdansk, Zuraw;1
+Gdansk, Zuraw;Gdansk, Olowianka;2
+Gdansk, Olowianka;Gdansk, Filharmonia Baltycka;1
+Gdansk, Filharmonia Baltycka;Gdansk, Muzeum II Wojny Swiatowej;2
+Gdansk, Muzeum II Wojny Swiatowej;Gdansk, Westerplatte;8
+Poznan, Dworzec Glowny;Poznan, Stary Rynek;3
+Poznan, Stary Rynek;Poznan, Ratusz;1
+Poznan, Ratusz;Poznan, Koziolki;1
+Poznan, Koziolki;Poznan, Fara Poznanska;1
+Poznan, Fara Poznanska;Poznan, Zamek Cesarski;2
+Poznan, Zamek Cesarski;Poznan, Malta;3
+Poznan, Malta;Poznan, Termy Maltanskie;1
+Poznan, Termy Maltanskie;Poznan, Nowe Zoo;4
+Szczecin, Dworzec Glowny;Warszawa, Dworzec Centralny;500
+Szczecin, Dworzec Glowny;Gdansk, Dworzec Glowny;300
+Szczecin, Dworzec Glowny;Poznan, Dworzec Glowny;200
+Szczecin, Dworzec Glowny;Wroclaw, Dworzec Glowny;350
+Szczecin, Dworzec Glowny;Berlin, Hauptbahnhof;120
+Warszawa, Dworzec Centralny;Krakow, Dworzec Glowny;290
+Warszawa, Dworzec Centralny;Lodz, Dworzec Fabryczny;130
+Warszawa, Dworzec Centralny;Lublin, Dworzec Glowny;170
+Gdansk, Dworzec Glowny;Gdynia, Dworzec Glowny;15
+Gdansk, Dworzec Glowny;Sopot, Dworzec Glowny;10
+Poznan, Dworzec Glowny;Wroclaw, Dworzec Glowny;180
+Poznan, Dworzec Glowny;Katowice, Dworzec Glowny;270
+Warszawa, Dworzec Centralny;Berlin, Hauptbahnhof;570
+Warszawa, Dworzec Centralny;Wieden, Hauptbahnhof;680
+Gdansk, Dworzec Glowny;Kopenhaga, Central Station;480
+Poznan, Dworzec Glowny;Praga, Hlavni Nadrazi;420
+Krakow, Dworzec Glowny;Budapeszt, Keleti;450
