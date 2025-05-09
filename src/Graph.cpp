@@ -6,7 +6,7 @@
 
 using namespace std;
 
-#include <cstdlib> // do rand()
+#include <cstdlib>
 
 void Graph::addGraphEdge(const string& city1, const string& city2, int distance) {
     graphData[city1].push_back(make_pair(city2, distance));
@@ -108,6 +108,5 @@ sf::Vector2f Graph::getCityPosition(const string& city) const {
     if (it != cityPositions.end()) {
         return it->second;
     }
-    // Jeśli nie znaleziono — zwróć losową pozycję (dla bezpieczeństwa)
     return sf::Vector2f(100, 100);
 }

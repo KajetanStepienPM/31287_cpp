@@ -5,7 +5,7 @@
 
 class GraphVisualizer {
 public:
-    void visualize(const Graph& graph); // <- TO BYŁO BRAKOWAŁO
+    void visualize(const Graph& graph);
 };
 
 #endif

@@ -5,6 +5,8 @@
 #include <algorithm>
 #include "GraphVisualizer.h"
 
+
+//Funkcja pomocnicza - oddzielanie miast od ulic
 std::map<std::string, sf::Vector2f> getOptimizedPositions(const std::vector<std::string>& cities, const Graph& graph) {
     std::map<std::string, sf::Vector2f> positions;
     const float radius = 300.0f;
@@ -45,8 +47,12 @@ std::map<std::string, sf::Vector2f> getOptimizedPositions(const std::vector<std:
     return positions;
 }
 
+
+//Glowna funkcja wizualizujaca
 void GraphVisualizer::visualize(const Graph& graph) {
-    sf::RenderWindow window(sf::VideoMode(1200, 800), "Advanced Graph Visualization");
+
+    //Tworzenie okna z SFML i poczatkowe ustawienia
+    sf::RenderWindow window(sf::VideoMode(1200, 800), "Graph Visualization");
     sf::View view = window.getDefaultView();
     sf::Vector2f dragStart;
     bool isDragging = false;
@@ -54,11 +60,15 @@ void GraphVisualizer::visualize(const Graph& graph) {
     const float minZoom = 0.1f;
     const float maxZoom = 5.0f;
 
+
+    //Ladowanie czcionki
     sf::Font font;
     if (!font.loadFromFile("arial.ttf")) {
         return;
     }
 
+
+    //Pobieranie danych
     auto cities = graph.getAllCities();
     auto cityPositions = getOptimizedPositions(cities, graph);
 
@@ -68,6 +78,8 @@ void GraphVisualizer::visualize(const Graph& graph) {
     bool showLocationNames = true;
     bool showCityNames = true;
 
+
+    //Obsluga zdarzen w oknie
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -115,7 +127,7 @@ void GraphVisualizer::visualize(const Graph& graph) {
                 if (event.key.code == sf::Keyboard::I) showIntercityConnections = !showIntercityConnections;
                 if (event.key.code == sf::Keyboard::N) showLocationNames = !showLocationNames;
                 if (event.key.code == sf::Keyboard::C) showCityNames = !showCityNames;
-                if (event.key.code == sf::Keyboard::R) { // Reset widoku
+                if (event.key.code == sf::Keyboard::R) {
                     view = window.getDefaultView();
                     zoomLevel = 1.0f;
                     window.setView(view);
